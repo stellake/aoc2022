@@ -1,5 +1,7 @@
 package common
 
+import kotlin.math.abs
+
 // inclusive, last allowed
 data class Limits(
     val min: Int? = null,
@@ -68,6 +70,10 @@ data class Coordinate(
 
     fun getAllSurroundingCoordinates(xLimits: Limits? = null, yLimits: Limits? = null): List<Coordinate> {
         return getDiagonalCoordinates(xLimits, yLimits).plus(getNonDiagonalCoordinates(xLimits, yLimits))
+    }
+
+    fun manhattanDistance(c2: Coordinate): Int {
+        return abs(c2.x - this.x) + abs(c2.y - this.y)
     }
 }
 
