@@ -7,6 +7,8 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="KotlinJavaRuntime" level="project" />
+    <orderEntry type="library" exported="" name="KotlinJavaRuntime" level="project" />
+    <orderEntry type="library" name="app.softwork.kotlinx.uuid.core.jvm" level="project" />
+    <orderEntry type="library" exported="" name="nosceon.titanite.json.gson" level="project" />
   </component>
 </module>
